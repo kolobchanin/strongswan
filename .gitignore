@@ -53,3 +53,6 @@ coverage/
 /*.includes
 test-driver
 nbproject/
+/log
+/stamp
+/tmp
