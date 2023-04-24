@@ -60,7 +60,9 @@ strongswan_CFLAGS := \
 	-DCHARON_NATT_PORT=0 \
 	-DVERSION=\"$(strongswan_VERSION)\" \
 	-DDEV_RANDOM=\"/dev/random\" \
-	-DDEV_URANDOM=\"/dev/urandom\"
+	-DDEV_URANDOM=\"/dev/urandom\" \
+	-DJNI_PACKAGE=$(JNI_PACKAGE) \
+	-DJNI_PACKAGE_STRING=\"$(JNI_PACKAGE_STRING)\"
 
 ifneq ($(strongswan_USE_BYOD),)
 strongswan_CFLAGS += -DUSE_BYOD
